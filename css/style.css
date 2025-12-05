@@ -1,0 +1,1021 @@
+/*! HTML5 Boilerplate v9.0.0-RC1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: reforma-medium;
+  src: url(../fonts/reforma-mediumwebfont.woff);
+}
+@font-face {
+  font-family: reforma;
+  src: url(../fonts/reforma-regularwebfont.woff);
+}
+@font-face {
+  font-family: almoni;
+  src: url(../fonts/almoni-dl-aaa-bold.otf);
+}
+@font-face {
+  font-family: almonib;
+  src: url(../fonts/almoni-tzar-aaa-bold.ttf);
+}
+
+
+html {
+  font-family: 'reforma';
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+html {
+  background: #000;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: reforma, Arial, sans-serif;
+}
+body {
+  /*height: 100vh;*/
+  background: #000;
+  overflow-x: hidden;
+}
+html[lang="he-IL"] body {
+  direction:rtl;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+/* Basic Grid System */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* Column widths based on 12-column grid */
+.col-1 {
+  flex: 0 0 8.3333%;
+  max-width: 8.3333%;
+}
+
+.col-2 {
+  flex: 0 0 16.6667%;
+  max-width: 16.6667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+}
+
+.col-5 {
+  flex: 0 0 41.6667%;
+  max-width: 41.6667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.3333%;
+  max-width: 58.3333%;
+}
+
+.col-8 {
+  flex: 0 0 66.6667%;
+  max-width: 66.6667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.3333%;
+  max-width: 83.3333%;
+}
+
+.col-11 {
+  flex: 0 0 91.6667%;
+  max-width: 91.6667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+
+/* ==========================================================================
+   Additional classes
+   ========================================================================== */
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.text-underline {
+  display: none;
+}
+.promotion-wrapper {
+  background: #000000;
+  width: 100%;
+  position: relative;
+}
+.promotion-blur {
+  background: url(../img/city.JPG);
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(5px) brightness(0.5);
+  background-size: contain;
+  background-repeat: repeat;
+}
+.registration-form-wrapper {
+  margin-top:0;
+  padding-top:0;
+
+  background: #000000;
+  width: 100%;
+}
+.form-object {
+  margin: 0px 40px 0px 0px;
+}
+
+.registration-form {
+  margin-top: 15px;
+}
+.registration-form input {
+  width: 100%;
+  height: 48px;
+  font-size: 20px;
+  padding: 0px 10px;
+  border: none;
+}
+.company-phone {
+  color: #fff;
+  direction: ltr;
+  text-align: center;
+  font-size: 25px;
+}
+
+.logo-wrapper img {
+  margin: 0 auto;
+  display: block;
+}
+.logo-wrapper hr {
+  border-top: 1px solid #cccccc38;
+  margin: 1.5em 1.5em 1em;
+}
+.registration-form input[type="submit"] {
+  font-family: 'reforma-medium';
+  font-size: 25px;
+  background: linear-gradient(to left, #bd9440, #f6ea9e, #cdae6e);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+/* Hover animation */
+.registration-form input[type="submit"] {
+  animation: pulseFontSize 1s infinite ease-in-out;
+}
+
+/* Keyframes for font pulsing */
+@keyframes pulseFontSize {
+  0% {
+    font-size: 25px; /* Normal size */
+  }
+  50% {
+    font-size: 28px; /* Enlarged size */
+  }
+  100% {
+    font-size: 25px; /* Back to normal */
+  }
+}
+.promotion img {
+  width: 100%;
+}
+.terms-acceptance {
+  color: #fff;
+  text-align: left;
+  margin-top: 15px;
+}
+.strike-text {
+  display: flex;
+  align-items: center;
+}
+
+.strike-text:before, .strike-text:after {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  margin: 0 12px;
+  background: #333;
+}
+
+.strike-text:before {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#818078), to(transparent));
+  background: linear-gradient(to right, #818078, transparent);
+}
+
+.strike-text:after {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#818078), to(transparent));
+  background: linear-gradient(to right, transparent, #818078);
+}
+
+.strike-text-middle {
+  color: #fff;
+  font-size: 25px;
+}
+
+.top-form-text {
+  font-size: 45px;
+  text-align: center;
+  line-height:40px;
+  color: #fff;
+  font-weight: 100;
+  font-family: 'reforma';
+}
+.top-form-text span{
+  font-weight: 400;
+  font-family: 'reforma-medium';
+}
+
+.medal-price {
+  animation: enlargeShrink 2s infinite;
+}
+
+@keyframes enlargeShrink {
+  0% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: scale(1); /* Enlarge */
+  }
+  100% {
+    transform: scale(0.95); /* Shrink back to original size */
+  }
+}
+
+
+/* Keyframe for reveal, pause, fade, and repeat */
+@keyframes uncover {
+  0% {
+    clip-path: inset(0 100% 0 0); /* Start hidden */
+    opacity: 0;
+  }
+  10% {
+    clip-path: inset(0 100% 0 0); /* Hidden */
+    opacity: 1;
+  }
+  40% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
+    opacity: 1;
+  }
+  70% {
+    clip-path: inset(0 0 0 0); /* Remain visible for a while */
+    opacity: 1;
+  }
+  80% {
+    opacity: 0; /* Start fading out */
+  }
+  100% {
+    clip-path: inset(0 100% 0 0); /* Hidden again */
+    opacity: 0;
+  }
+}
+
+
+
+
+.promotion {
+  background: url(../img/city.JPG);
+  position: relative;
+  display: block;
+  width: 100%;
+  background-size: cover;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-position: bottom;
+}
+
+.promotion .triangle {
+  background: url(../img/triangle.png);
+  background-size: cover;
+  position: absolute;
+  width: 270px;
+  height: 220px;
+  top: 0;
+  right: 0;
+  display: block;
+}
+.promotion .triangle .triangle-text {
+  transform: rotate(39deg);
+  text-align: center;
+  font-size: 1.8em;
+  color: black;
+  line-height: 1;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  font-weight: 600;
+  font-family: almoni;
+}
+
+.promotion .triangle .triangle-text span {
+  color: #d10c0c;
+}
+.titles {
+  text-align: center;
+}
+
+
+h3.box-title {
+  border-radius: 15px;
+  background: #000;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 30px;
+  font-size: 2.2em;
+  font-weight: 400;
+}
+
+
+.medal-price {
+  height: 240px;
+  display: block;
+  width: auto;
+  position: absolute;
+  left: -65px;
+  top: -161px;
+}
+.medal-wrapper {
+  position: relative;
+}
+
+span.medal-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 34%;
+  bottom: 0;
+  text-align: center;
+  font-family: 'almonib';
+  line-height: 26px;
+  font-size: 30px;
+  transform: rotate(-16deg);
+  text-shadow: -3px 1px 16px rgb(255 255 255);
+}
+
+.medal-wrapper img {
+  width: 214px;
+}
+.top-advantages {
+  justify-content: center;
+  padding: 0 20px;
+  line-height: 6px;
+  padding-bottom: 10px;
+}
+.advantages-wrapper {
+  position: relative;
+  background: #000000cf;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 20px;
+  margin-top: 60px;
+  padding-top: 40px;
+}
+.top-advantage {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  font-family: 'almoni';
+  /* text-align: center; */
+}
+
+.top-advantages img {
+  height: 45px;
+  width: auto;
+  margin-left: 12px;
+  vertical-align: -5px;
+}
+.advantage img {
+  height: 25px;
+  width: auto;
+  margin-left: 10px;
+  vertical-align: top;
+  margin-top: -10px;
+}
+
+.advantage {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  min-height: 40px;
+  line-height: 1;
+  height: auto;
+}
+
+.row.sub-advantages {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.warning {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  margin-top: -30px;
+}
+.top-advantage span {
+  width: calc(100% - 60px);
+  display: inline-block;
+  line-height: 23px;
+}
+
+
+.old-price-wrapper {
+  background: linear-gradient(to left, #919191, #dbdbdb, #919191);
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0px 12px;
+  position: absolute;
+  right: 0;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: -35px;
+  top: 0;
+  margin-right: -40px;
+  transform: rotate(14deg);
+}
+
+.old-price {
+  padding: 0 10px;
+}
+span.old-cost {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+img.striker {
+  transform: rotate(351deg);
+  position: absolute;
+  width: 112%;
+  top: 27px;
+  left: -11px;
+}
+span.old-nis {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.new-price-wrapper {
+  display: inline-block;
+  border-radius: 20px;
+  padding: 0px 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: -50px;
+  top: 0;
+  background: linear-gradient(to left, #bd9440, #f6ea9e, #cdae6e);
+  line-height: 60px;
+}
+
+.new-price {
+  font-size: 58px;
+  font-weight: 600;
+}
+span.only {
+  font-size: 26px;
+  vertical-align: 15px;
+  font-weight: 600;
+  margin-left: -10px;
+}
+
+span.new-nis {
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: -10px;
+}
+h1.title {
+  font-size: 4em;
+  font-weight: bold;
+  margin-top: -3px;
+  margin-bottom: -20px;
+  font-family: 'reforma-medium';
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+h2.sub-title {
+  font-size: 2.6em;
+  font-weight: bold;
+  font-family: 'reforma-medium';
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.gradient-text {
+  background: linear-gradient(to left, #cfa54c, #f2e496, #ceaf6f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.shadow-text {
+  text-shadow: -1px 2px 2px rgb(0 0 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  filter: drop-shadow(0px 0px 21px #000);
+}
+
+.gradient-title-text {
+  background: linear-gradient(to left, #cc8e10, #f6ea9e, #f1a200);
+  background-clip: text; /* For Firefox */
+  -webkit-background-clip: text; /* For WebKit browsers */
+  -webkit-text-fill-color: transparent; /* Make the text transparent */
+  color: transparent; /* Ensure gradient works properly in Firefox */
+  position: relative;
+  z-index: 2;
+}
+
+.advantage span {
+  display: inline-block;
+  width: calc(100% - 50px);
+}
+
+
+
+.gradient-template-green {
+  background: linear-gradient(to left, #bbda4c, #d5f857fc, #c7ff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient-template-background-green {
+  background: linear-gradient(to left, #bbda4c, #d5f857fc, #c7ff00)!important;
+}
+
+/* Style for the loading overlay */
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+/* Spinner styling */
+.spinner {
+  border: 10px solid #f3f3f3; /* Light grey */
+  border-top: 10px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hide the loading screen when the page is loaded */
+body.loaded #loading-screen {
+  display: none;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* Responsive Design for screens less than 600px */
+
+
+@media (max-width: 1200px) {
+  .top-form-text {
+    font-size: 3.5vw!important;
+  }
+}
+@media (max-width: 600px) {
+  [class*="col-"] {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  img.striker {
+    transform: rotate(351deg);
+    position: absolute;
+    width: 107%;
+    top: 17px;
+    left: -12px;
+  }
+  span.old-cost {
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+  .text-container {
+    width: 70%;
+  }
+  .top-form-text {
+    font-size: 40px!important;
+    margin-top: 10px;
+  }
+  .top-form-text span {
+    display: block;
+  }
+  .strike-text-middle {
+    font-size: 20px!important;
+    text-align: center;
+  }
+  .registration-form input[type="text"] {
+    margin-bottom: 5px;
+  }
+  .terms-acceptance {
+    text-align: right!important;
+  }
+  .registration-form-wrapper {
+    background: url(../img/bottom-bg.JPG);
+    width: 100%;
+  }
+  .logo-wrapper {
+    margin-top: 20px;
+  }
+  .form-object {
+    margin: 40px;
+  }
+  .text-underline {
+    display: block !important;
+    height: 8px;
+    margin: 5px auto 15px;
+    width: 66vw;
+    position: relative;
+    animation: uncover 4s ease-in-out infinite;
+    overflow: hidden;
+  }
+  .promotion {
+    height: initial;
+    padding-bottom:0px;
+  }
+  .top-advantages div:has(.top-advantage) {
+    margin-right:20px;
+    margin-bottom:20px
+  }
+  .warning {
+    color: #fff;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 10px;
+  }
+  h1.title {
+    font-size: 4.2em;
+    margin-top: 80px;
+    line-height: 1em;
+  }
+
+  h2.sub-title {
+    margin-top:20px;
+    line-height: 1em;
+    font-size: 3.5em;
+    margin-bottom: 33px;
+  }
+  h3.box-title {
+    width: 100%;
+    line-height: 1em;
+    font-size: 2em;
+    padding: 30px 80px;
+    margin-top: 30px;
+  }
+  .old-price-wrapper {
+    border-radius: 20px;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: -235px;
+    transform: rotate(17deg);
+    text-align: center;
+    right: -31px;
+  }
+  .new-price-wrapper {
+    display: inline-block;
+    border-radius: 20px;
+    padding: 0px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: -86px;
+    top: 0;
+  }
+  .advantages-wrapper {
+    padding-top: 40px;
+  }
+  .medal-price {
+    display: block;
+    width: auto;
+    position: absolute;
+    left: -57px;
+    top: -427px;
+    margin: 0 auto;
+  }
+  span.medal-text {
+    top: 35%;
+    line-height: 22px;
+    font-size: 25px;
+  }
+  .medal-wrapper img {
+    width: 190px;
+  }
+}
+
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  margin: 16px auto 8px auto;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 16px solid #4ade80;
+}
