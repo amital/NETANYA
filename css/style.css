@@ -1019,17 +1019,3 @@ body.loaded #loading-screen {
   border-right: 16px solid transparent;
   border-top: 16px solid #4ade80;
 }
-
-
-
-/* Simple hero image section to exactly match supplied PNG */
-.hero-image {
-  width: 100%;
-  overflow: hidden;
-}
-
-.hero-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
